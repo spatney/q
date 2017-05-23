@@ -1,4 +1,4 @@
-let setImmidiate = require("setimmediate");
+require("setimmediate");
 
 /**
  * A queue for executing tasks async while still yielding to IO
