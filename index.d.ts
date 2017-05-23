@@ -1,6 +1,6 @@
 declare class Queue {
     constructor();
-    push(func: Function): void;
+    doAsap(func: Function): void;
 }
 
 declare namespace Queue { }

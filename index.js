@@ -19,7 +19,7 @@ class Queue {
      * 
      * @param {Function} func - Function to execute
      */
-    push(func) {
+    doAsap(func) {
         if (typeof func !== 'function') return;
         this.items.push(func);
         if (!this.running)

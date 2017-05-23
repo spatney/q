@@ -5,5 +5,5 @@ var Queue = require('fast-queue');
 
 let q = new Queue();
 
-q.push(()=>{console.log('Hello')});
+q.doAsap(()=>{console.log('Hello')});
 ```
