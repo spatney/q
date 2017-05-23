@@ -1,12 +1,24 @@
 let setImmidiate = require("setimmediate");
 
+/**
+ * A queue for executing tasks async while still yielding to IO
+ * between tasks.
+ */
 class Queue {
 
+    /**
+     * Constructor
+     */
     constructor() {
         this.items = [];
         this.running = false;
     }
 
+    /**
+     * Push
+     * 
+     * @param {Function} func - Function to execute
+     */
     push(func) {
         if (typeof func !== 'function') return;
         this.items.push(func);
